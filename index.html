@@ -42,8 +42,18 @@
             </div>
         </div>
     </div>
+
+    <!-- Load scripts -->
     <script src="config.js"></script>
     <script src="script.js"></script>
+
+    <!-- Error handling for script loading -->
+    <script>
+        window.onerror = function (msg, url, lineNo, columnNo, error) {
+            console.error('Error: ' + msg + '\nURL: ' + url + '\nLine: ' + lineNo + '\nColumn: ' + columnNo + '\nError object: ' + JSON.stringify(error));
+            return false;
+        };
+    </script>
 </body>
 
 </html>
