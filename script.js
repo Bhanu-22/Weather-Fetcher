@@ -1,5 +1,5 @@
-// Replace with your WeatherAPI.com API key
-const apiKey = '8adcaf23632c4f21b60164941250506'; // Get your API key from https://www.weatherapi.com
+// Get API key from config
+const apiKey = config.apiKey;
 const cityInput = document.getElementById('city-input');
 const searchBtn = document.getElementById('search-btn');
 const cityName = document.getElementById('city-name');
